@@ -2,14 +2,39 @@ package com.example.soundboard
 
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
+import androidx.core.content.ContextCompat
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
 
     private var player: MediaPlayer? = null
     private var currentResourceId: Int = 0
+
+    private val sounds = arrayOf(
+        R.raw.ants_go_marching,
+        R.raw.bingo,
+        R.raw.doremi,
+        R.raw.happy_and_you_know,
+        R.raw.jolly_good_fellow,
+        R.raw.london_bridge,
+        R.raw.old_mac_donald,
+        R.raw.six_little_ducks,
+        R.raw.twinkle_little_star
+    )
+
+    private val buttonIds = arrayOf(
+        R.id.btn1,
+        R.id.btn2,
+        R.id.btn3,
+        R.id.btn4,
+        R.id.btn5,
+        R.id.btn6,
+        R.id.btn7,
+        R.id.btn8,
+        R.id.btn9
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -27,32 +52,8 @@ class MainActivity : AppCompatActivity() {
         )
         supportActionBar?.hide()
 
-        val sounds = arrayOf(
-            R.raw.ants_go_marching,
-            R.raw.bingo,
-            R.raw.doremi,
-            R.raw.happy_and_you_know,
-            R.raw.jolly_good_fellow,
-            R.raw.london_bridge,
-            R.raw.old_mac_donald,
-            R.raw.six_little_ducks,
-            R.raw.twinkle_little_star
-        )
-
-        val buttonIds = arrayOf(
-            R.id.btn1,
-            R.id.btn2,
-            R.id.btn3,
-            R.id.btn4,
-            R.id.btn5,
-            R.id.btn6,
-            R.id.btn7,
-            R.id.btn8,
-            R.id.btn9
-        )
-
         for (i in buttonIds.indices) {
-            findViewById<Button>(buttonIds[i]).setOnClickListener {
+            findViewById<MaterialButton>(buttonIds[i]).setOnClickListener {
                 playSound(sounds[i])
             }
         }
@@ -74,6 +75,19 @@ class MainActivity : AppCompatActivity() {
                 it.start()
                 currentResourceId = resource
             }
+        }
+        updateButtonBorders()
+    }
+
+    private fun updateButtonBorders() {
+        for (i in buttonIds.indices) {
+            val btn = findViewById<MaterialButton>(buttonIds[i])
+            val strokeColor = if (sounds[i] == currentResourceId) {
+                ContextCompat.getColor(this, R.color.blue)
+            } else {
+                ContextCompat.getColor(this, R.color.light_gray)
+            }
+            btn.strokeColor = android.content.res.ColorStateList.valueOf(strokeColor)
         }
     }
 

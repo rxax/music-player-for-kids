@@ -3,7 +3,24 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
+    <!-- Body -->
+    <path
+        android:fillColor="#F4A460"
+        android:pathData="M12,18m-6,0a6,4 0,1 1,12 0a6,4 0,1 1,-12 0"/>
+    <!-- Head -->
+    <path
+        android:fillColor="#F4A460"
+        android:pathData="M12,10m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+    <!-- Ears -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M7,8c-1,0 -2,1 -2,3s1,4 2,4s1,-7 0,-7zM17,8c1,0 2,1 2,3s-1,4 -2,4s-1,-7 0,-7z"/>
+    <!-- Eyes -->
     <path
         android:fillColor="#000000"
-        android:pathData="M10 5.172C10 3.782 8.823 2 7 2 5.177 2 4 3.782 4 5.172v.138c0 .324.218.611.53.693l1.142.3c.19.05.328.222.328.42v1.277a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V6.723c0-.198.138-.37.328-.42l1.142-.3c.312-.082.53-.37.53-.693v-.138C14 3.782 12.823 2 11 2c-1.823 0-3 1.782-3 3.172v.828h2v-.828zM4 14l-1 7h18l-1-7H4z"/>
+        android:pathData="M10,9m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0M14,9m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0"/>
+    <!-- Nose -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,11m-0.8,0a0.8,0.5 0,1 1,1.6 0a0.8,0.5 0,1 1,-1.6 0"/>
 </vector>

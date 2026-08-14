@@ -3,10 +3,17 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
+    <!-- Water -->
     <path
-        android:strokeColor="#000000"
-        android:strokeWidth="2"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:pathData="M3 21h18M3 10c0 7 18 7 18 0M8 12v5M12 11v6M16 12v5"/>
+        android:fillColor="#03A9F4"
+        android:pathData="M0,18h24v6h-24z"/>
+    <!-- Bridge Bricks -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M3,21h18v-4c0,-3.87 -3.13,-7 -7,-7s-7,3.13 -7,7v4z"/>
+    <!-- Highlights -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M6,16h2v2h-2zM11,14h2v2h-2zM16,16h2v2h-2z"/>
 </vector>

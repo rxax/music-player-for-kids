@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,90 +17,81 @@
         android:rowCount="3"
         android:useDefaultMargins="true">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn1"
-            android:text="@string/song_ants"
-            android:drawableTop="@drawable/ic_ant"
+            app:icon="@drawable/ic_ant"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             style="@style/SoundButton"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn2"
-            android:text="@string/song_bingo"
-            android:drawableTop="@drawable/ic_dog"
+            app:icon="@drawable/ic_dog"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             style="@style/SoundButton"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn3"
-            android:text="@string/song_doremi"
-            android:drawableTop="@drawable/ic_music"
+            app:icon="@drawable/ic_music"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             style="@style/SoundButton"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn4"
-            android:text="@string/song_happy"
-            android:drawableTop="@drawable/ic_happy"
+            app:icon="@drawable/ic_happy"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             style="@style/SoundButton"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn5"
-            android:text="@string/song_jolly"
-            android:drawableTop="@drawable/ic_party"
+            app:icon="@drawable/ic_party"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             style="@style/SoundButton"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn6"
-            android:text="@string/song_london"
-            android:drawableTop="@drawable/ic_bridge"
+            app:icon="@drawable/ic_bridge"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             style="@style/SoundButton"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn7"
-            android:text="@string/song_macdonald"
-            android:drawableTop="@drawable/ic_barn"
+            app:icon="@drawable/ic_barn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             style="@style/SoundButton"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn8"
-            android:text="@string/song_ducks"
-            android:drawableTop="@drawable/ic_duck"
+            app:icon="@drawable/ic_duck"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             style="@style/SoundButton"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn9"
-            android:text="@string/song_twinkle"
-            android:drawableTop="@drawable/ic_star"
+            app:icon="@drawable/ic_star"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -117,13 +109,7 @@
         android:background="#FFFFFF"
         android:elevation="4dp">
 
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"/>
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/pauseButton"
             android:layout_width="match_parent"
             android:layout_height="64dp"

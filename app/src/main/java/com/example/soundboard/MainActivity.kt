@@ -2,18 +2,14 @@ package com.example.soundboard
 
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.widget.Button
-import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
     private var player: MediaPlayer? = null
-    private lateinit var seekBar: SeekBar
-    private val handler = Handler(Looper.getMainLooper())
+    private var currentResourceId: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -30,8 +26,6 @@ class MainActivity : AppCompatActivity() {
                     or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
         )
         supportActionBar?.hide()
-
-        seekBar = findViewById(R.id.seekBar)
 
         val sounds = arrayOf(
             R.raw.ants_go_marching,
@@ -71,49 +65,25 @@ class MainActivity : AppCompatActivity() {
                     it.start()
             }
         }
-
-        seekBar.setOnSeekBarChangeListener(
-            object : SeekBar.OnSeekBarChangeListener {
-                override fun onProgressChanged(
-                    seekBar: SeekBar?,
-                    progress: Int,
-                    fromUser: Boolean
-                ) {
-                    if (fromUser) {
-                        player?.seekTo(progress)
-                    }
-                }
-
-                override fun onStartTrackingTouch(seekBar: SeekBar?) {}
-
-                override fun onStopTrackingTouch(seekBar: SeekBar?) {}
-            }
-        )
     }
 
     private fun playSound(resource: Int) {
-        player?.stop()
-        player?.release()
+        if (currentResourceId == resource) {
+            player?.stop()
+            player?.release()
+            player = null
+            currentResourceId = 0
+        } else {
+            player?.stop()
+            player?.release()
 
-        player = MediaPlayer.create(this, resource)
-        player?.setOnPreparedListener {
-            it.start()
-            seekBar.max = it.duration
-            updateSeekBar()
-        }
-    }
-
-    private fun updateSeekBar() {
-        handler.post(object : Runnable {
-            override fun run() {
-                player?.let {
-                    if (it.isPlaying) {
-                        seekBar.progress = it.currentPosition
-                        handler.postDelayed(this, 500)
-                    }
-                }
+            player = MediaPlayer.create(this, resource)
+            player?.let {
+                it.isLooping = true
+                it.start()
+                currentResourceId = resource
             }
-        })
+        }
     }
 
     override fun onDestroy() {

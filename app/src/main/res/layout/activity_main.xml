@@ -11,8 +11,7 @@
     <GridLayout
         android:id="@+id/grid"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:columnCount="3"
         android:rowCount="3"
         android:useDefaultMargins="true">
@@ -99,23 +98,5 @@
             style="@style/SoundButton"/>
 
     </GridLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
-        android:elevation="4dp">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/pauseButton"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:text="@string/play_pause"
-            android:textSize="18sp"
-            style="@style/Widget.Material3.Button"/>
-    </LinearLayout>
 
 </LinearLayout>

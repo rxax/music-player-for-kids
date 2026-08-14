@@ -56,15 +56,6 @@ class MainActivity : AppCompatActivity() {
                 playSound(sounds[i])
             }
         }
-
-        findViewById<Button>(R.id.pauseButton).setOnClickListener {
-            player?.let {
-                if (it.isPlaying)
-                    it.pause()
-                else
-                    it.start()
-            }
-        }
     }
 
     private fun playSound(resource: Int) {

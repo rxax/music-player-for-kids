@@ -31,15 +31,15 @@ class MainActivity : AppCompatActivity() {
         seekBar = findViewById(R.id.seekBar)
 
         val sounds = arrayOf(
-            R.raw.sound1,
-            R.raw.sound2,
-            R.raw.sound3,
-            R.raw.sound4,
-            R.raw.sound5,
-            R.raw.sound6,
-            R.raw.sound7,
-            R.raw.sound8,
-            R.raw.sound9
+            R.raw.song1,
+            R.raw.song2,
+            R.raw.song3,
+            R.raw.song4,
+            R.raw.song5,
+            R.raw.song6,
+            R.raw.song7,
+            R.raw.song8,
+            R.raw.song9
         )
 
         val buttonIds = arrayOf(

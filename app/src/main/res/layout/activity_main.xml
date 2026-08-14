@@ -35,7 +35,47 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"/>
 
-        <!-- Repeat for buttons 4–9 -->
+        <Button
+            android:id="@+id/btn4"
+            android:text="Track 4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="Track 5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="Track 6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn7"
+            android:text="Track 7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="Track 8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="Track 9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"/>
 
     </GridLayout>
 

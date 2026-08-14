@@ -1,0 +1,40 @@
+# Built objects and native libraries
+bin/
+gen/
+out/
+build/
+.gradle/
+/app/build/
+
+# Android Studio / IntelliJ files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Local configuration files
+local.properties
+
+# Log files
+*.log
+
+# Android Profiler
+captures/
+
+# Keystore files (NEVER check these into source control)
+*.jks
+*.keystore
+
+# External native build folders
+.externalNativeBuild/
+.cxx/
+
+# Google Services file
+google-services.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# AI Artifacts
+.artifacts/

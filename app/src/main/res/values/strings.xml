@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Music Player for Kids</string>
+    <string name="song_ants">Ants Go\nMarching</string>
+    <string name="song_bingo">Bingo</string>
+    <string name="song_doremi">Do Re Mi</string>
+    <string name="song_happy">Happy &amp;\nYou Know It</string>
+    <string name="song_jolly">Jolly Good\nFellow</string>
+    <string name="song_london">London\nBridge</string>
+    <string name="song_macdonald">Old\nMacDonald</string>
+    <string name="song_ducks">Six Little\nDucks</string>
+    <string name="song_twinkle">Twinkle\nStar</string>
+    <string name="play_pause">Play / Pause</string>
 </resources>

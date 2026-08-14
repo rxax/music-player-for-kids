@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
             View.SYSTEM_UI_FLAG_FULLSCREEN
                     or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                    or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                    or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
         )
         supportActionBar?.hide()
 
@@ -89,18 +92,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun playSound(resource: Int) {
+        player?.stop()
         player?.release()
 
         player = MediaPlayer.create(this, resource)
-        player?.start()
+        player?.setOnPreparedListener {
+            it.start()
+            seekBar.max = it.duration
+            updateSeekBar()
+        }
+    }
 
-        seekBar.max = player!!.duration
-
+    private fun updateSeekBar() {
         handler.post(object : Runnable {
             override fun run() {
                 player?.let {
-                    seekBar.progress = it.currentPosition
                     if (it.isPlaying) {
+                        seekBar.progress = it.currentPosition
                         handler.postDelayed(this, 500)
                     }
                 }

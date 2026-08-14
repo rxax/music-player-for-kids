@@ -4,7 +4,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="8dp"
+    android:background="#F8F9FA">
 
     <GridLayout
         android:id="@+id/grid"
@@ -12,82 +13,123 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:columnCount="3"
-        android:rowCount="3">
+        android:rowCount="3"
+        android:useDefaultMargins="true">
 
         <Button
             android:id="@+id/btn1"
-            android:text="Track 1"
+            android:text="@string/song_ants"
+            android:drawableTop="@drawable/ic_ant"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
         <Button
             android:id="@+id/btn2"
-            android:text="Track 2"
+            android:text="@string/song_bingo"
+            android:drawableTop="@drawable/ic_dog"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
         <Button
             android:id="@+id/btn3"
-            android:text="Track 3"
+            android:text="@string/song_doremi"
+            android:drawableTop="@drawable/ic_music"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
         <Button
             android:id="@+id/btn4"
-            android:text="Track 4"
+            android:text="@string/song_happy"
+            android:drawableTop="@drawable/ic_happy"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
         <Button
             android:id="@+id/btn5"
-            android:text="Track 5"
+            android:text="@string/song_jolly"
+            android:drawableTop="@drawable/ic_party"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
         <Button
             android:id="@+id/btn6"
-            android:text="Track 6"
+            android:text="@string/song_london"
+            android:drawableTop="@drawable/ic_bridge"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
         <Button
             android:id="@+id/btn7"
-            android:text="Track 7"
+            android:text="@string/song_macdonald"
+            android:drawableTop="@drawable/ic_barn"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
         <Button
             android:id="@+id/btn8"
-            android:text="Track 8"
+            android:text="@string/song_ducks"
+            android:drawableTop="@drawable/ic_duck"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
         <Button
             android:id="@+id/btn9"
-            android:text="Track 9"
+            android:text="@string/song_twinkle"
+            android:drawableTop="@drawable/ic_star"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/SoundButton"/>
 
     </GridLayout>
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/pauseButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Play / Pause"/>
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/play_pause"
+            android:textSize="18sp"
+            style="@style/Widget.Material3.Button"/>
+    </LinearLayout>
 
 </LinearLayout>

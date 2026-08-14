@@ -8,4 +8,16 @@
         <item name="colorOnSecondary">@color/black</item>
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
+
+    <style name="SoundButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.LessRounded</item>
+        <item name="backgroundTint">@color/light_gray</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.LessRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
 </resources>

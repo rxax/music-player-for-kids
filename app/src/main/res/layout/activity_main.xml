@@ -1,111 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
     android:background="#F8F9FA">
 
-    <GridLayout
-        android:id="@+id/grid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="3"
-        android:rowCount="3"
-        android:useDefaultMargins="true">
+    <!-- Row 1 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/ants"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn1"
-            android:text="@string/caption_1"
-            app:icon="@drawable/ants"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/bingo"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="@+id/btn1"
+        app:layout_constraintEnd_toStartOf="@+id/btn3"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn2"
-            android:text="@string/caption_2"
-            app:icon="@drawable/bingo"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/doremi"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintTop_toTopOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn3"
-            android:text="@string/caption_3"
-            app:icon="@drawable/doremi"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
+    <!-- Row 2 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/if_youre_happy"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintBottom_toTopOf="@+id/btn7"
+        app:layout_constraintEnd_toStartOf="@+id/btn5"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn4"
-            android:text="@string/caption_4"
-            app:icon="@drawable/if_youre_happy"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/jolly"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/btn4"
+        app:layout_constraintTop_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toStartOf="@+id/btn6"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn5"
-            android:text="@string/caption_5"
-            app:icon="@drawable/jolly"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/london"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/btn5"
+        app:layout_constraintTop_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn6"
-            android:text="@string/caption_6"
-            app:icon="@drawable/london"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
+    <!-- Row 3 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/mcdonald"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn8"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn7"
-            android:text="@string/caption_7"
-            app:icon="@drawable/mcdonald"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/ducks"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/btn7"
+        app:layout_constraintTop_toTopOf="@+id/btn7"
+        app:layout_constraintEnd_toStartOf="@+id/btn9"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn8"
-            android:text="@string/caption_8"
-            app:icon="@drawable/ducks"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/star"
+        style="@style/SoundButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/btn8"
+        app:layout_constraintTop_toTopOf="@+id/btn7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn9"
-            android:text="@string/caption_9"
-            app:icon="@drawable/star"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            style="@style/SoundButton"/>
-
-    </GridLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

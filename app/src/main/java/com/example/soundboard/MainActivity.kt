@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     private var currentResourceId: Int = 0
 
     private val sounds = arrayOf(
-        R.raw.ants_go_marching,
+        R.raw.ants_marching,
         R.raw.bingo,
         R.raw.doremi,
         R.raw.happy_and_you_know,

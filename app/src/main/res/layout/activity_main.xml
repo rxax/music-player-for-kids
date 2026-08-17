@@ -72,7 +72,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn7"
-            app:icon="@drawable/ic_barn"
+            app:icon="@drawable/mcdonald"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"

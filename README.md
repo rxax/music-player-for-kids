@@ -1,7 +1,5 @@
 # Music Player for Kids 🎵
 
-![App Screenshot](screenshots/main_screen.jpg)
-
 A simple, interactive, and child-safe soundboard designed for toddlers. This app provides a distraction-free environment where children can enjoy classic nursery rhymes through a purely visual and tactile interface.
 
 ## ✨ Features

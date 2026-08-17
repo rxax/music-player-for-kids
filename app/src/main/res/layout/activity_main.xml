@@ -89,7 +89,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn8"
             android:text="@string/caption_8"
-            app:icon="@drawable/ic_duck"
+            app:icon="@drawable/ducks"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"

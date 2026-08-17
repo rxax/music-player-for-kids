@@ -39,7 +39,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn3"
             android:text="@string/caption_3"
-            app:icon="@drawable/star"
+            app:icon="@drawable/doremi"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"

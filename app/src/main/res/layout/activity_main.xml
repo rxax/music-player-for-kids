@@ -45,7 +45,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn4"
-            app:icon="@drawable/ic_happy"
+            app:icon="@drawable/if_youre_happy"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"

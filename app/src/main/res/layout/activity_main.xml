@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
+    android:padding="16dp"
     android:background="#F8F9FA">
 
     <!-- Row 1 -->
@@ -20,6 +20,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn4"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
         app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintVertical_chainStyle="packed"
         android:layout_margin="4dp"/>
 
@@ -62,6 +63,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn7"
         app:layout_constraintEnd_toStartOf="@+id/btn5"
         app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="packed"
         android:layout_margin="4dp"/>
 
     <com.google.android.material.button.MaterialButton
@@ -103,6 +105,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn8"
         app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="packed"
         android:layout_margin="4dp"/>
 
     <com.google.android.material.button.MaterialButton

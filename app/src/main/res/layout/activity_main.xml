@@ -27,7 +27,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn2"
-            app:icon="@drawable/ic_dog"
+            app:icon="@drawable/bingo"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"

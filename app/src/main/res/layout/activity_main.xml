@@ -18,6 +18,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn1"
+            android:text="@string/caption_1"
             app:icon="@drawable/ants"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -27,6 +28,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn2"
+            android:text="@string/caption_2"
             app:icon="@drawable/bingo"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -36,6 +38,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn3"
+            android:text="@string/caption_3"
             app:icon="@drawable/ic_music"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -45,6 +48,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn4"
+            android:text="@string/caption_4"
             app:icon="@drawable/if_youre_happy"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -54,6 +58,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn5"
+            android:text="@string/caption_5"
             app:icon="@drawable/jolly"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -63,6 +68,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn6"
+            android:text="@string/caption_6"
             app:icon="@drawable/london"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -72,6 +78,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn7"
+            android:text="@string/caption_7"
             app:icon="@drawable/mcdonald"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -81,6 +88,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn8"
+            android:text="@string/caption_8"
             app:icon="@drawable/ic_duck"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -90,6 +98,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn9"
+            android:text="@string/caption_9"
             app:icon="@drawable/ic_star"
             android:layout_width="0dp"
             android:layout_height="0dp"

@@ -10,4 +10,13 @@
     <string name="song_ducks">Six Little\nDucks</string>
     <string name="song_twinkle">Twinkle\nStar</string>
     <string name="play_pause">Play / Pause</string>
+    <string name="caption_1">1</string>
+    <string name="caption_2">2</string>
+    <string name="caption_3">3</string>
+    <string name="caption_4">4</string>
+    <string name="caption_5">5</string>
+    <string name="caption_6">6</string>
+    <string name="caption_7">7</string>
+    <string name="caption_8">8</string>
+    <string name="caption_9">9</string>
 </resources>

@@ -99,7 +99,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn9"
             android:text="@string/caption_9"
-            app:icon="@drawable/ic_star"
+            app:icon="@drawable/star"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"

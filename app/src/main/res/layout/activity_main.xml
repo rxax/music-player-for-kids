@@ -18,7 +18,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn1"
-            app:icon="@drawable/ic_ant"
+            app:icon="@drawable/ants"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"

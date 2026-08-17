@@ -54,7 +54,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn5"
-            app:icon="@drawable/ic_party"
+            app:icon="@drawable/jolly"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
